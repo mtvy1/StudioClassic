@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Studio Classic",
+  "description": "Return the classic YouTube Studio interface.",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["*://studio.youtube.com/*"],
+      "js": [
+        "src/helpers/storage.js",
+        "src/content/classic.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "permissions": ["storage"],
+  "icons": {
+    "64": "icons/64.png",
+    "128": "icons/128.png"
+  }
+}
