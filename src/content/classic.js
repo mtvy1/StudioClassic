@@ -1,5 +1,5 @@
 (() => {
-  const FLAGS = new Set(['WebFEAllStudioByChannel__enable_analytics_hub_web']);
+  const FLAGS = new Set(['WebFEAllStudioByChannel__enable_analytics_hub_web', 'WebFEAllStudioByChannel__enable_content_hub_web']);
 
   const flip = (o) => {
     if (o && typeof o === 'object') {
